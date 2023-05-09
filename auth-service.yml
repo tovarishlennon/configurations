@@ -13,7 +13,4 @@ spring:
       max-lifetime: 2000000
       connection-timeout: 30000
       pool-name: HikariDbPool
-  liquibase:
-    change-log: classpath:/db/changelog/liquibase-changelog.xml
-    enabled: true
 
