@@ -1,3 +1,6 @@
+server:
+  port: 7887
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/gis
