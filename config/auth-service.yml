@@ -14,15 +14,4 @@ spring:
   liquibase:
     change-log: classpath:db/changelog/liquibase-changelog.xml
     enabled: true
-  data:
-    redis:
-      host: 127.0.0.1
-      port: 6379
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - metrics
-          - prometheus
