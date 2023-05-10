@@ -1,7 +1,10 @@
 server:
-  port: 9082
+  port: 9341
 
 spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
   datasource:
     url: jdbc:postgresql://localhost:5432/gis
     username: postgres
@@ -14,17 +17,3 @@ spring:
       max-lifetime: 2000000
       connection-timeout: 30000
       pool-name: HikariDbPool
-  application:
-    name: user-service
-  data:
-    redis:
-      host: 127.0.0.1
-      port: 6379
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - metrics
-          - prometheus
