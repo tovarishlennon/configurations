@@ -2,6 +2,10 @@ server:
   port: 9035
 
 spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/gis
+    username: postgres
+    password: 123321
   redis:
     host: 127.0.0.1
     port: 6379
